@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibraryTerminal
 {
-    class Program
+    public class Validator
     {
-        static void Main(string[] args)
+        public static bool isValidBook(string title)
         {
-            
+
         }
     }
 }
