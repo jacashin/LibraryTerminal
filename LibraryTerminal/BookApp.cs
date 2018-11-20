@@ -9,6 +9,7 @@ namespace LibraryTerminal
     public class BookApp
     {
         //functions will go here
+<<<<<<< HEAD
         
        static string strToParse = "Title, Author, Status, DueDate";
         string[] words = strToParse.Split(',');
@@ -20,6 +21,20 @@ namespace LibraryTerminal
 
 
 	} 
+=======
+
+      
+        //method create list of Book objects
+        //from constructor into lines to write
+        public static void DisplayBooks(List<Book> listOfBooks)
+        {
+            Console.WriteLine("List of books: ");
+            Console.WriteLine("Title\t\t\tAuthor\t\t\tStatus\t\t\tDue Date");
+            Console.WriteLine("-----\t\t\t------\t\t\t------\t\t\t--------");
+        }
+
+    }
+>>>>>>> 37afaffc04e67ba931b45e66485288afbf3dcfcc
 }
 
 
