@@ -9,19 +9,7 @@ namespace LibraryTerminal
     public class BookApp
     {
         //functions will go here
-<<<<<<< HEAD
-        
-       static string strToParse = "Title, Author, Status, DueDate";
-        string[] words = strToParse.Split(',');
-        public List<Book> FindBook = new List<Book>();
-        public string Title;
-        public string Author;
-        public string Status;
-        public string DueDate;
 
-
-	} 
-=======
 
       
         //method create list of Book objects
@@ -34,7 +22,7 @@ namespace LibraryTerminal
         }
 
     }
->>>>>>> 37afaffc04e67ba931b45e66485288afbf3dcfcc
+
 }
 
 

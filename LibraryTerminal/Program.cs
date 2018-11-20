@@ -11,9 +11,7 @@ namespace LibraryTerminal
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-            
-=======
+
                       
             string path = FileManagement.GetPath();
 
@@ -28,7 +26,7 @@ namespace LibraryTerminal
             FileManagement.WriteFile(listOfStrings, path);
 
             Console.ReadLine();
->>>>>>> 37afaffc04e67ba931b45e66485288afbf3dcfcc
+
         }
     }
 }
