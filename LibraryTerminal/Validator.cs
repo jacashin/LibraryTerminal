@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace LibraryTerminal
 {
-<<<<<<< HEAD
     public class Validator
     {
         public static bool IsSelectionValid(string input)
         {
-            return input.Equals("author", StringComparison.CurrentCultureIgnoreCase)||
+            return input.Equals("author", StringComparison.CurrentCultureIgnoreCase) ||
                 input.Equals("title", StringComparison.CurrentCultureIgnoreCase) ||
                 input.Equals("list", StringComparison.CurrentCultureIgnoreCase);
         }
@@ -26,11 +25,11 @@ namespace LibraryTerminal
             else
             {
                 return false;
-             } 
+            }
         }
         public static bool IsValidTitle(string title)
         {
-            
+
             if (!string.IsNullOrEmpty(title))
             {
                 return true;
@@ -45,7 +44,4 @@ namespace LibraryTerminal
     }
     //validates stuff 
 }
-=======
-    }
-
->>>>>>> bbdb7880cd06776ad98e875b7644c32173b8d83c
+     
