@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryTerminal
 {
+<<<<<<< HEAD
     public class Validator
     {
         public static bool IsSelectionValid(string input)
@@ -44,3 +45,7 @@ namespace LibraryTerminal
     }
     //validates stuff 
 }
+=======
+    }
+
+>>>>>>> bbdb7880cd06776ad98e875b7644c32173b8d83c

@@ -13,6 +13,7 @@ namespace LibraryTerminal
         static void Main(string[] args)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Console.WriteLine("Please enter 'Title' to search by title, 'Author' to search by author, or 'List' to see the entire book list");//JA
             string UserInput = Console.ReadLine();//JA
            
@@ -28,6 +29,10 @@ namespace LibraryTerminal
                 UserInput = Console.ReadLine();
 =======
 
+=======
+
+                      
+>>>>>>> bbdb7880cd06776ad98e875b7644c32173b8d83c
             string path = FileManagement.GetPath();
 >>>>>>> e28f4b7757d79b2789dae75d3ba967abf4f7e002
 
@@ -83,6 +88,7 @@ namespace LibraryTerminal
                 Console.WriteLine(book);
             }
             Console.ReadLine();
+
         }
     }
 }
