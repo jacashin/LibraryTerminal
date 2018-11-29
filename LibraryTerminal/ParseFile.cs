@@ -8,19 +8,21 @@ namespace LibraryTerminal
 {
     public class ParseFile
     {
-        public static List<Book> ConvertToBook(List<string> bookListString)
+        public static Dictionary<int, Book> ConvertToBook(List<string> bookListString)
         {
-            List<Book> bookList = new List<Book>();
+            Dictionary<int, Book> bookList = new Dictionary<int, Book>();
+            int counter = 1;
             foreach (var item in bookListString)
             {
                 var book = new Book(GetBookTitle(item), GetBookAuthor(item), GetBookStatus(item), GetBookDueDate(item));
-                bookList.Add(book);
+                bookList.Add(counter, book);
+                counter++;
             }
 
             return bookList;
         }
 
-        public static string GetBookTitle(string bookEntry)
+        private static string GetBookTitle(string bookEntry)
         {
             char[] separator = { '_' };
             string str = bookEntry;
@@ -29,7 +31,7 @@ namespace LibraryTerminal
             return title;
         }
 
-        public static string GetBookAuthor(string bookEntry)
+        private static string GetBookAuthor(string bookEntry)
         {
             char[] separator = { '_' };
             string str = bookEntry;
@@ -39,7 +41,7 @@ namespace LibraryTerminal
 
         }
 
-        public static bool GetBookStatus(string bookEntry)
+        private static bool GetBookStatus(string bookEntry)
         {
             char[] separator = { '_' };
             string str = bookEntry;
@@ -48,7 +50,7 @@ namespace LibraryTerminal
             return status;
         }
 
-        public static DateTime GetBookDueDate(string bookEntry)
+        private static DateTime GetBookDueDate(string bookEntry)
         {
             char[] separator = { '_' };
             string str = Convert.ToString(bookEntry);
